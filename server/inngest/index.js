@@ -1,7 +1,6 @@
 import { Inngest } from "inngest";
 
 import User from "../models/User.js";
-
 // Create an Inngest instance
 export const inngest = new Inngest({ id: "show-bizz-app" });
 
