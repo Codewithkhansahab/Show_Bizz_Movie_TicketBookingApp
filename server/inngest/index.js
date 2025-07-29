@@ -52,7 +52,7 @@ const syncUserUpdation = inngest.createFunction(
     };
 
     // You used findByIdAndDelete here by mistake. Use findByIdAndUpdate instead.
-    await User.findByIdAndUpdate(id, userData, { new: true, upsert: true });
+    await User.findByIdAndUpdate(id, userData);
   }
 );
 
