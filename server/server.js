@@ -26,5 +26,5 @@ app.get('/' , (req,res) =>{
 app.use('/api/inngest',serve({Client : inngest,functions}))
 
 app.listen(port,()=>{
-    console.log("Server started !!! 3000 ")
+    console.log("Server started !!! 3000")
 })
