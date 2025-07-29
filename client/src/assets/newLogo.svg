@@ -1,0 +1,29 @@
+
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text-main { font: bold 36px 'Segoe UI', sans-serif; fill: #fdf6e3; }
+    .tagline { font: 16px 'Segoe UI', sans-serif; fill: #FF4136; }
+    .ticket { fill: #FF4136; }
+    .reel { fill: #F4C542; }
+    .hole { fill: #111; }
+    .background { fill: #000000; }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" class="background"/>
+
+  <!-- Ticket Icon -->
+  <path d="M40 50 Q38 60 40 70 L90 70 Q92 60 90 50 Z" class="ticket" />
+
+  <!-- Film Reel Icon -->
+  <circle cx="110" cy="60" r="25" class="reel"/>
+  <circle cx="110" cy="60" r="5" class="hole"/>
+  <circle cx="100" cy="50" r="4" class="hole"/>
+  <circle cx="120" cy="50" r="4" class="hole"/>
+  <circle cx="100" cy="70" r="4" class="hole"/>
+  <circle cx="120" cy="70" r="4" class="hole"/>
+
+  <!-- Logo Text -->
+  <text x="160" y="70" class="text-main">ShowBizz</text>
+  <text x="160" y="100" class="tagline">MOVIE TICKET BOOKING APP</text>
+</svg>
