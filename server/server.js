@@ -6,8 +6,6 @@ import { clerkMiddleware, Client } from '@clerk/express'
 import { inngest,functions } from "./inngest/index.js";
 import {serve} from "inngest/express"
 
-
-
 const app = express();
 const port = 3000;
 
@@ -25,7 +23,7 @@ app.use(clerkMiddleware())
 app.get('/' , (req,res) =>{
     res.send("Server is live")
 })
-app.use('/api/inngest',serve({Client : inngest,function}))
+app.use('/api/inngest',serve({Client : inngest,functions}))
 
 app.listen(port,()=>{
     console.log("Server started !!! 3000 ")
