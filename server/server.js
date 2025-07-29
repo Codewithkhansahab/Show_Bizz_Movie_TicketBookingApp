@@ -23,7 +23,7 @@ app.use(clerkMiddleware())
 app.get('/' , (req,res) =>{
     res.send("Server is live")
 })
-app.use('/api/inngest',serve({client : inngest,functions}))
+app.use('/api/inngest', serve({client:inngest,functions}))
 
 app.listen(port,()=>{
     console.log("Server started !!! 3000")
